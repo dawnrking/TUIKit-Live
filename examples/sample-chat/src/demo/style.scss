@@ -1,0 +1,61 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background: url("./assets/image/background.png") no-repeat;
+  background-size: 100% 100%;
+  min-width: 1200px;
+  overflow-x: auto;
+  .chat-demo {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.chat-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: calc(100% - 60px);
+}
+
+.chat-header {
+  background: #FFFFFF;
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  .menu-default {
+    cursor: pointer;
+    font-family: 'PingFang SC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 4px;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .menu-unselect {
+    color: #666666;
+  }
+  .menu-select {
+    background: #147AFF;
+    color: #FFFFFF;
+  }
+}
+
+.menu-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.disabled {
+  display: none;
+}
