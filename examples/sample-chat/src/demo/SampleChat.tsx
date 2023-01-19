@@ -29,13 +29,13 @@ const menuList = [
 
 const init = async ():Promise<ChatSDK> => {
   return new Promise((resolve, reject) => {
-    const tim = TIM.create({ SDKAppID: genTestUserSig('9241').sdkAppID });
+    const tim = TIM.create({ SDKAppID: genTestUserSig('****').sdkAppID });
     tim?.registerPlugin({ 'tim-upload-plugin': TIMUploadPlugin });
     const onReady = () => { resolve(tim); };
     tim.on(TIM.EVENT.SDK_READY, onReady);
     tim.login({
-      userID: '9241',
-      userSig: genTestUserSig('9241').userSig,
+      userID: '****',
+      userSig: genTestUserSig('****').userSig,
     });
   });
 }
